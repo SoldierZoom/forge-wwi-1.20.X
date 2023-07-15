@@ -28,8 +28,10 @@ public class wwi {
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        //register items to game
+        //register my items to game
         ModItems.register(modEventBus);
+        //register my creative tab
+        ModCreativeModTabs.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -50,9 +52,6 @@ public class wwi {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.FRANCIUM_INGOT);
-        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
