@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "wwi:francium_block",
+    "wwi:raw_sapphire_block",
+    "wwi:sapphire_block"
+  ]
+}
