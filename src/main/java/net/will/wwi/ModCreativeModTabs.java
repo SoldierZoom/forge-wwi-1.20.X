@@ -7,6 +7,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
+import net.will.wwi.block.ModBlocks;
 import net.will.wwi.item.ModItems;
 
 public class ModCreativeModTabs {
@@ -18,6 +19,8 @@ public class ModCreativeModTabs {
                     .title(Component.translatable("creativetab.tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.FRANCIUM_INGOT.get());
+
+                        pOutput.accept(ModBlocks.FRANCIUM_BLOCK.get());
                     })
                     .build());
 
