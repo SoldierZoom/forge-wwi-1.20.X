@@ -19,7 +19,7 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, wwi.MOD_ID);
 
     public static final RegistryObject<Block> FRANCIUM_BLOCK = registerBlock("francium_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(3.0F,0F)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(1.5F)));
 
 
     //need to register new block as both an item and block
