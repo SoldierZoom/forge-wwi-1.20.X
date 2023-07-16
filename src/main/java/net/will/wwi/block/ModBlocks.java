@@ -6,6 +6,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -20,11 +21,18 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, wwi.MOD_ID);
 
     public static final RegistryObject<Block> FRANCIUM_BLOCK = registerBlock("francium_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(1.5F)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
+                    .strength(1.5F,0.5F)
+                    .mapColor(MapColor.COLOR_LIGHT_GRAY)));
+
     public static final RegistryObject<Block> RAW_SAPPHIRE_BLOCK = registerBlock("raw_sapphire_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).sound(SoundType.AMETHYST)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK)
+                    .sound(SoundType.AMETHYST)
+                    .mapColor(MapColor.COLOR_LIGHT_BLUE)));
     public static final RegistryObject<Block> SAPPHIRE_BLOCK = registerBlock("sapphire_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).sound(SoundType.AMETHYST)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK)
+                    .sound(SoundType.AMETHYST)
+                    .mapColor(MapColor.COLOR_BLUE)));
 
 
     //need to register new block as both an item and block
