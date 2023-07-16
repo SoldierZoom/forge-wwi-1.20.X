@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "wwi:raw_sapphire_block"
+    }
+  ],
+  "result": {
+    "item": "wwi:raw_sapphire",
+    "count": 9
+  }
+}

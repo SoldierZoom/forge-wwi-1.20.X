@@ -1,5 +1,15 @@
 {
   "item.wwi.francium_ingot": "Francium Ingot",
+  "item.wwi.raw_sapphire": "Raw Sapphire",
+  "item.wwi.pink_tourmaline": "Pink Tourmaline",
+  "item.wwi.ruby": "Ruby",
+  "item.wwi.sapphire": "Sapphire",
+  "item.wwi.topaz": "Topaz",
+  "item.wwi.pink_tourmaline_powder": "Crushed Pink Tourmaline",
+  "item.wwi.ruby_powder": "Crushed Ruby",
+  "item.wwi.sapphire_powder": "Crushed Sapphire",
+  "item.wwi.topaz_powder": "Crushed Topaz",
+
 
   "block.wwi.francium_block": "Block of Francium",
 

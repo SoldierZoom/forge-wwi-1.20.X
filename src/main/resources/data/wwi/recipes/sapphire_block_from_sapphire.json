@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "wwi:sapphire"
+    }
+  },
+  "result": {
+    "item": "wwi:sapphire_block",
+    "count": 1
+  }
+}
