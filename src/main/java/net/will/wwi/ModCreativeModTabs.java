@@ -18,8 +18,19 @@ public class ModCreativeModTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.FRANCIUM_INGOT.get()))
                     .title(Component.translatable("creativetab.tab"))
                     .displayItems((pParameters, pOutput) -> {
+                        pOutput.accept(ModItems.RAW_SAPPHIRE.get());
+                        pOutput.accept(ModItems.PINK_TOURMALINE.get());
+                        pOutput.accept(ModItems.RUBY.get());
+                        pOutput.accept(ModItems.SAPPHIRE.get());
+                        pOutput.accept(ModItems.TOPAZ.get());
                         pOutput.accept(ModItems.FRANCIUM_INGOT.get());
+                        pOutput.accept(ModItems.PINK_TOURMALINE_POWDER.get());
+                        pOutput.accept(ModItems.RUBY_POWDER.get());
+                        pOutput.accept(ModItems.SAPPHIRE_POWDER.get());
+                        pOutput.accept(ModItems.TOPAZ_POWDER.get());
 
+                        pOutput.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
+                        pOutput.accept(ModBlocks.SAPPHIRE_BLOCK.get());
                         pOutput.accept(ModBlocks.FRANCIUM_BLOCK.get());
                     })
                     .build());
