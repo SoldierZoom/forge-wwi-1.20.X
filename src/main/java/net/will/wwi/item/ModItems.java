@@ -1,5 +1,6 @@
 package net.will.wwi.item;
 
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -35,6 +36,13 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> TOPAZ_POWDER = ITEMS.register("topaz_powder",
             () -> new Item(new Item.Properties()));
+    //food
+    public static final RegistryObject<Item> KFC_BUCKET = ITEMS.register("kfc_bucket",
+            () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(12)
+                            .saturationMod(5f)
+                            .build())));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

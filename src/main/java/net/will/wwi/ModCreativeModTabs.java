@@ -32,6 +32,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
                         pOutput.accept(ModBlocks.SAPPHIRE_BLOCK.get());
                         pOutput.accept(ModBlocks.FRANCIUM_BLOCK.get());
+
+                        pOutput.accept(ModItems.KFC_BUCKET.get());
                     })
                     .build());
 
