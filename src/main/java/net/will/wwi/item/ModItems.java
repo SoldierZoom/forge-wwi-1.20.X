@@ -1,11 +1,16 @@
 package net.will.wwi.item;
 
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemNameBlockItem;
+import net.minecraft.world.item.Rarity;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.will.wwi.block.ModBlocks;
 import net.will.wwi.wwi;
 
 public class ModItems {
@@ -40,10 +45,13 @@ public class ModItems {
     public static final RegistryObject<Item> KFC_BUCKET = ITEMS.register("kfc_bucket",
             () -> new Item(new Item.Properties()
                     .food(new FoodProperties.Builder()
-                            .nutrition(12)
-                            .saturationMod(5f)
-                            .build())));
-
+                            .nutrition(16)
+                            .saturationMod(7f)
+                            .effect(() -> new MobEffectInstance(MobEffects.CONFUSION,1200,49,false,false,false),1f)
+                            .build())
+                    .rarity(Rarity.RARE)));
+    public static final RegistryObject<Item> KFC_BUCKET_SEEDS = ITEMS.register("kfc_bucket_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.KFC_BUCKET_CROP.get(),new Item.Properties()));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

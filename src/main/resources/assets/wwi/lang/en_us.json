@@ -10,11 +10,13 @@
   "item.wwi.sapphire_powder": "Crushed Sapphire",
   "item.wwi.topaz_powder": "Crushed Topaz",
   "item.wwi.kfc_bucket": "Bucket of Kentucky Fried Chicken",
+  "item.wwi.kfc_bucket_seeds": "Suspicious Seeds",
 
 
   "block.wwi.francium_block": "Block of Francium",
   "block.wwi.raw_sapphire_block": "Block of Raw Sapphire",
   "block.wwi.sapphire_block": "Block of Sapphire",
+  "item.wwi.kfc_bucket_crop": "Bucket of Kentucky Fried Chicken Crop",
 
   "creativetab.tab": "Will's Wacky Ideas"
 }

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "wwi:block/kfc_bucket_stage6"
+  },
+  "render_type": "cutout"
+}

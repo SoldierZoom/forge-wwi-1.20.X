@@ -1,0 +1,40 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "wwi:block/kfc_bucket_stage0"
+    },
+    "age=1": {
+      "model": "wwi:block/kfc_bucket_stage1"
+    },
+    "age=2": {
+      "model": "wwi:block/kfc_bucket_stage2"
+    },
+    "age=3": {
+      "model": "wwi:block/kfc_bucket_stage3"
+    },
+    "age=4": {
+      "model": "wwi:block/kfc_bucket_stage4"
+    },
+    "age=5": {
+      "model": "wwi:block/kfc_bucket_stage5"
+    },
+    "age=6": {
+      "model": "wwi:block/kfc_bucket_stage6"
+    },
+    "age=7": {
+      "model": "wwi:block/kfc_bucket_stage7"
+    },
+    "age=8": {
+      "model": "wwi:block/kfc_bucket_stage8"
+    },
+    "age=9": {
+      "model": "wwi:block/kfc_bucket_stage9"
+    },
+    "age=10": {
+      "model": "wwi:block/kfc_bucket_stage10"
+    },
+    "age=11": {
+      "model": "wwi:block/kfc_bucket_stage11"
+    }
+  }
+}

@@ -34,6 +34,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.FRANCIUM_BLOCK.get());
 
                         pOutput.accept(ModItems.KFC_BUCKET.get());
+                        pOutput.accept(ModItems.KFC_BUCKET_SEEDS.get());
                     })
                     .build());
 

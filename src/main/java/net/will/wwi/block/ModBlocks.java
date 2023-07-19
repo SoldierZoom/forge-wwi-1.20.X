@@ -11,6 +11,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.will.wwi.block.custom.KFCCropBlock;
 import net.will.wwi.item.ModItems;
 import net.will.wwi.wwi;
 
@@ -33,6 +34,8 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK)
                     .sound(SoundType.AMETHYST)
                     .mapColor(MapColor.COLOR_BLUE)));
+    public static final RegistryObject<Block> KFC_BUCKET_CROP = BLOCKS.register("kfc_bucket_crop",
+            () -> new KFCCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
 
 
     //need to register new block as both an item and block
