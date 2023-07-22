@@ -3,6 +3,7 @@ package net.will.wwi.item.custom;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
@@ -24,8 +25,9 @@ public class FranciumItem extends Item {
     }
     @Override
     public @Nullable Entity createEntity(Level level, Entity location, ItemStack stack) {
-        location.set
-        return (new FranciumItemEntity(ExplodeRadius,level,location.getX(),location.getY(),location.getZ(),stack));
+        FranciumItemEntity item_entity = new FranciumItemEntity(ExplodeRadius,level,location.getX(),location.getY(),location.getZ(),stack);
+        item_entity.setPickUpDelay(30);
+        return (item_entity);
     }
 
     @Override

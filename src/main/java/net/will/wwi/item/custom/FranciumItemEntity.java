@@ -12,7 +12,6 @@ public class FranciumItemEntity extends ItemEntity {
         super(pLevel, pPosX, pPosY, pPosZ, pItemStack);
         this.ExplodeRadius=pExplodeRadius;
     }
-
     @Override
     public void tick() {
         super.tick();
