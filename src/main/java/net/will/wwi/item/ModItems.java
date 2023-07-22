@@ -11,6 +11,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.will.wwi.block.ModBlocks;
+import net.will.wwi.item.custom.FranciumItem;
 import net.will.wwi.wwi;
 
 public class ModItems {
@@ -18,7 +19,7 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, wwi.MOD_ID);
 
     public static final RegistryObject<Item> FRANCIUM_INGOT = ITEMS.register("francium_ingot",
-            () -> new Item(new Item.Properties()));
+            () -> new FranciumItem(new Item.Properties()));
 
     //gemstones
     public static final RegistryObject<Item> RAW_SAPPHIRE = ITEMS.register("raw_sapphire",
@@ -51,7 +52,8 @@ public class ModItems {
                             .build())
                     .rarity(Rarity.RARE)));
     public static final RegistryObject<Item> KFC_BUCKET_SEEDS = ITEMS.register("kfc_bucket_seeds",
-            () -> new ItemNameBlockItem(ModBlocks.KFC_BUCKET_CROP.get(),new Item.Properties()));
+            () -> new ItemNameBlockItem(ModBlocks.KFC_BUCKET_CROP.get(),new Item.Properties()
+                    .rarity(Rarity.EPIC)));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
