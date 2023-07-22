@@ -26,7 +26,13 @@ public class FranciumItem extends Item {
 
     @Override
     public @Nullable Entity createEntity(Level level, Entity location, ItemStack stack) {
-        return (new FranciumItemEntity(ExplodeRadius,level,location.getX(),location.getY(),location.getZ(),stack));
+        //need to get player var
+        final float distance = 1.5f;
+        double dx = location.getX() + location.getLookAngle().x()*distance;
+        double dy = location.getY() + location.getEyeHeight();
+        double dz = location.getZ() + location.getLookAngle().y()*distance;
+
+        return (new FranciumItemEntity(ExplodeRadius,level,dx,dy,dz,stack));
     }
 
     @Override
