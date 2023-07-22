@@ -17,7 +17,6 @@ public class FranciumItemEntity extends ItemEntity {
         super.tick();
         if(this.isInWater()) {
             double[] pos = {this.getX(),this.getY(),this.getZ()};
-            //BlockPos bpos = new BlockPos((int)pos[0],(int)pos[0],(int)pos[0]);
 
             this.discard();
             this.getCommandSenderWorld().explode(null,null,new IgnoreExplosionResistance(),pos[0],pos[1],pos[2],ExplodeRadius,false,Level.ExplosionInteraction.TNT);
