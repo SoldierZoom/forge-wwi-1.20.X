@@ -19,7 +19,7 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, wwi.MOD_ID);
 
     public static final RegistryObject<Item> FRANCIUM_INGOT = ITEMS.register("francium_ingot",
-            () -> new FranciumItem(new Item.Properties()));
+            () -> new FranciumItem(5f,new Item.Properties()));
 
     //gemstones
     public static final RegistryObject<Item> RAW_SAPPHIRE = ITEMS.register("raw_sapphire",

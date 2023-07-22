@@ -11,8 +11,10 @@ import net.will.wwi.effect.ModEffects;
 import org.jetbrains.annotations.Nullable;
 
 public class FranciumItem extends Item {
-    public FranciumItem(Properties pProperties) {
+    float ExplodeRadius;
+    public FranciumItem(float pExplodeRadius,Properties pProperties) {
         super(pProperties);
+        this.ExplodeRadius=pExplodeRadius;
     }
 
     @Override
@@ -24,7 +26,7 @@ public class FranciumItem extends Item {
 
     @Override
     public @Nullable Entity createEntity(Level level, Entity location, ItemStack stack) {
-        return (new FranciumItemEntity(level,location.getX(),location.getY(),location.getZ(),stack));
+        return (new FranciumItemEntity(ExplodeRadius,level,location.getX(),location.getY(),location.getZ(),stack));
     }
 
     @Override
