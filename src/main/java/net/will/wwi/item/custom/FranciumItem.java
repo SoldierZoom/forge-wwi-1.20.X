@@ -1,7 +1,6 @@
 package net.will.wwi.item.custom;
 
 import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.Item;
@@ -23,16 +22,10 @@ public class FranciumItem extends Item {
         LivingEntity entity = (LivingEntity) pEntity;
         entity.addEffect(new MobEffectInstance(ModEffects.CANCER.get(),60,99,false,false,false));
     }
-
     @Override
     public @Nullable Entity createEntity(Level level, Entity location, ItemStack stack) {
-        //need to get player var
-        final float distance = 1.5f;
-        double dx = location.getX() + location.getLookAngle().x()*distance;
-        double dy = location.getY() + location.getEyeHeight();
-        double dz = location.getZ() + location.getLookAngle().y()*distance;
-
-        return (new FranciumItemEntity(ExplodeRadius,level,dx,dy,dz,stack));
+        location.set
+        return (new FranciumItemEntity(ExplodeRadius,level,location.getX(),location.getY(),location.getZ(),stack));
     }
 
     @Override
