@@ -23,6 +23,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.RUBY.get());
                         pOutput.accept(ModItems.SAPPHIRE.get());
                         pOutput.accept(ModItems.TOPAZ.get());
+                        pOutput.accept(ModItems.FRANCIUM_NUGGET.get());
                         pOutput.accept(ModItems.FRANCIUM_INGOT.get());
                         pOutput.accept(ModItems.PINK_TOURMALINE_POWDER.get());
                         pOutput.accept(ModItems.RUBY_POWDER.get());

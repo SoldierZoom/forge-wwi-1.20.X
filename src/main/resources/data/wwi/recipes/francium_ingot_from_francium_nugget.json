@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "wwi:francium_nugget"
+    }
+  },
+  "result": {
+    "item": "wwi:francium_ingot",
+    "count": 1
+  }
+}

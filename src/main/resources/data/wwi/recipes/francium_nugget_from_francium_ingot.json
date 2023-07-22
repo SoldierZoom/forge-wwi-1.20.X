@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "wwi:francium_ingot"
+    }
+  ],
+  "result": {
+    "item": "wwi:francium_nugget",
+    "count": 9
+  }
+}
