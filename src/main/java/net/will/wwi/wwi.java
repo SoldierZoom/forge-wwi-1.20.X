@@ -17,6 +17,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.will.wwi.block.ModBlocks;
+import net.will.wwi.effect.ModEffects;
 import net.will.wwi.item.ModItems;
 import org.slf4j.Logger;
 
@@ -31,9 +32,10 @@ public class wwi {
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        //register my items, blocks and creative tab to the game
+        //register my items, blocks, effects and creative tab to the game
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModEffects.register(modEventBus);
         ModCreativeModTabs.register(modEventBus);
 
         // Register the commonSetup method for modloading
