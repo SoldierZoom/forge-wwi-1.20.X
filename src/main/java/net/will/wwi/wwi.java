@@ -16,6 +16,7 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.will.wwi.block.FranciumBlocks;
 import net.will.wwi.block.ModBlocks;
 import net.will.wwi.effect.ModEffects;
 import net.will.wwi.item.ModItems;
@@ -35,6 +36,7 @@ public class wwi {
         //register my items, blocks, effects and creative tab to the game
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        FranciumBlocks.register(modEventBus);
         ModEffects.register(modEventBus);
         ModCreativeModTabs.register(modEventBus);
 
