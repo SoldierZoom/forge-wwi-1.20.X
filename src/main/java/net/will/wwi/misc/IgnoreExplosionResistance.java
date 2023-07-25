@@ -1,4 +1,4 @@
-package net.will.wwi.item.custom;
+package net.will.wwi.misc;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;

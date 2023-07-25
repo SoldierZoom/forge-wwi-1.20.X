@@ -5,6 +5,7 @@ package net.will.wwi.item.custom;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import net.will.wwi.misc.IgnoreExplosionResistance;
 
 public class FranciumItemEntity extends ItemEntity {
     float ExplodeRadius;
