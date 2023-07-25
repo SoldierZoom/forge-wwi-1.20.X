@@ -7,6 +7,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
+import net.will.wwi.block.FranciumBlocks;
 import net.will.wwi.block.ModBlocks;
 import net.will.wwi.item.ModItems;
 
@@ -32,7 +33,7 @@ public class ModCreativeModTabs {
 
                         pOutput.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
                         pOutput.accept(ModBlocks.SAPPHIRE_BLOCK.get());
-                        pOutput.accept(ModBlocks.FRANCIUM_BLOCK.get());
+                        pOutput.accept(FranciumBlocks.FRANCIUM_BLOCK.get());
 
                         pOutput.accept(ModItems.KFC_BUCKET.get());
                         pOutput.accept(ModItems.KFC_BUCKET_SEEDS.get());

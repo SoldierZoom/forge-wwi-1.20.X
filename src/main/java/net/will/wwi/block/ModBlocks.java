@@ -21,11 +21,6 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, wwi.MOD_ID);
 
-    public static final RegistryObject<Block> FRANCIUM_BLOCK = registerBlock("francium_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
-                    .strength(1.5F,0.5F)
-                    .mapColor(MapColor.COLOR_LIGHT_GRAY)));
-
     public static final RegistryObject<Block> RAW_SAPPHIRE_BLOCK = registerBlock("raw_sapphire_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK)
                     .sound(SoundType.AMETHYST)
