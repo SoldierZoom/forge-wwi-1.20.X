@@ -21,7 +21,8 @@ public class FranciumItem extends Item {
     public void inventoryTick(ItemStack pStack, Level pLevel, Entity pEntity, int pSlotId, boolean pIsSelected) {
         super.inventoryTick(pStack, pLevel, pEntity, pSlotId, pIsSelected);
         LivingEntity entity = (LivingEntity) pEntity;
-        entity.addEffect(new MobEffectInstance(ModEffects.CANCER.get(),60,99,false,false,false));
+        entity.addEffect(new MobEffectInstance(ModEffects.CANCER.get(),60,0,false,false,false));
+        entity.addEffect(new MobEffectInstance(ModEffects.RADIOACTIVE_POISONING.get(),60,0));
     }
     @Override
     public @Nullable Entity createEntity(Level level, Entity location, ItemStack stack) {
